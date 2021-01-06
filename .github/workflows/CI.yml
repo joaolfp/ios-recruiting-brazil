@@ -16,6 +16,9 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.app
       
+    - name: Install cocoapods
+      run: pod install
+      
     - name: Update Bundle
       run: bundle update
 
